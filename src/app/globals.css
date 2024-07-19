@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  background-color: gray;
+main {
+  background-color: #f5f5dc;
 }
