@@ -4,12 +4,12 @@ import TestimonialCarousel from "./components/testimonial";
 
 const Home = () => {
   return (
-    <main className="max-w-2xl mx-auto">
-      <div>
-        <img src="hero.jpg" alt="hero" className="w-full" />
+    <main className="w-full mx-auto">
+      <div className="flex justify-center">
+        <img src="hero.jpg" alt="hero" className="w-full max-w-2xl" />
       </div>
-      <div className="my-[30px] flex flex-col justify-center">
-        <div className="">
+      <div className="my-6 flex flex-col justify-center">
+        <div className="text-center  p-4 sm:p-6 md:p-8">
           <h2 className="flex justify-center text-2xl font-bold text-[#023566]">
             SELAMAT DATANG DI FARM PLUS
           </h2>
@@ -51,7 +51,7 @@ const Home = () => {
           </div>
           <div className="p-[30px]"></div>
         </div>
-        <div className="mb-8">
+        <div className="mb-8  p-4 sm:p-6 md:p-8">
           <h2
             className="flex justify-center text-2xl font-bold text-[#023566] mb-8"
             id="produk"
@@ -82,10 +82,13 @@ const Home = () => {
           </div>
         </div>
         <div className="p-[30px]"></div>
-        <div className="w-full bg-[#F3F3C5] py-[24px]">
-          <ProductCarousel />
+
+        <div className="flex justify-center py-8 px-4 sm:p-6 md:p-8 bg-[#F3F3C5]">
+          <div className=" max-w-3xl">
+            <ProductCarousel />
+          </div>
         </div>
-        <div className="py-8">
+        <div className="py-8  px-4 sm:p-6 md:p-8">
           <div className="">
             <h2
               className="flex justify-center text-center text-2xl font-bold text-[#023566] mb-3"
@@ -116,45 +119,56 @@ const Home = () => {
             >
               TERTARIK BERGABUNG <br /> MENJADI RESELLER?
             </h2>
-            <h3 className="flex justify-center text-center text-l font-bold text-[#023566] mb-6">
+            <h3 className="flex justify-center text-center text-l font-bold text-[#023566] mb-6 opacity-0">
               HUBUNGI KAMI
             </h3>
-            <div className="flex justify-center">
+            <h3 className="flex justify-center text-center text-l font-bold text-[#023566] mb-6 text-wrap ">
+              COMING SOON (TUNGGU INFO SELANJUTNYA)
+            </h3>
+            {/* <div className="flex justify-center opacity-0">
               <a href="https://wa.me/085186668382?text=Halo%2C%20saya%20mau%20gabung%20jadi%20reseller.">
                 <button className="flex w-[300px] h-[50px] bg-[#009418] justify-center items-center rounded-full transform transition-transform duration-300 hover:scale-105">
                   <img src="whatsapp.svg" className="w-[30px] mr-3" />
                   <h2 className="text-2xl text-white font-bold">Whatsapp</h2>
                 </button>
               </a>
-            </div>
+            </div> */}{" "}
+            {/* tombol reseller */}
           </div>
         </div>
-        <div className="my-12" id="testimoni">
-          <TestimonialCarousel />
-          <div className="flex justify-center">
-            <a href="https://shopee.co.id/buyer/1269217484/rating?shop_id=1268737948">
-              <button className="p-2 border bg-[#023566] text-white rounded-xl">
-                Testimoni lainnya
-              </button>
-            </a>
+        <div className="flex justify-center py-8 px-4 sm:p-6 md:p-8">
+          <div
+            className="flex justify-center items-center mt-12 h-[450px] max-w-3xl"
+            id="testimoni "
+          >
+            <TestimonialCarousel />
           </div>
         </div>
-        <footer className="bg-[#023566] grid grid-cols-4 grid-rows-1 py-12">
-          <div className="flex justify-center items-center">
-            <img src="logo.png" alt="logo" />
-          </div>
-          <div className="flex flex-col text-white font-bold">
+        <div className="flex justify-center">
+          <a href="https://shopee.co.id/buyer/1269217484/rating?shop_id=1268737948">
+            <button className="p-2 border bg-[#023566] text-white rounded-xl">
+              Testimoni lainnya
+            </button>
+          </a>
+        </div>
+      </div>
+      <footer className="bg-[#023566] py-5 ">
+        <div className="flex justify-center items-center">
+          <img src="logo.png" alt="logo" />
+        </div>
+        <div className="grid grid-cols-3 grid-rows-1 py-12">
+          <div className="flex flex-col text-white font-bold p-2">
             <a href="#social-media">Social Media</a>
-            <a href="#online-shop">Online Shop</a>
+            <a href="#social-media">Online Shop</a>
             <a>Gallery</a>
             <a href="#produk">Produk</a>
             <a href="#reseller">Join Reseller</a>
           </div>
-          <div className="flex flex-col  text-white font-bold">
+          <div className="flex flex-col  text-white font-bold p-2">
             <a href="#grosir">Grosir</a>
             <a href="#testimoni">Testimoni</a>
           </div>
-          <div className="flex  items-center text-white font-bold gap-2">
+          <div className="flex flex-col items-center text-white font-bold gap-2 p-2">
             <svg
               width="30"
               height="34"
@@ -175,8 +189,8 @@ const Home = () => {
             </svg>
             Jakarta Barat
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </main>
   );
 };

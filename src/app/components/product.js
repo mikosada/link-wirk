@@ -67,7 +67,7 @@ const ProductCarousel = () => {
       <div className="flex items-center">
         <button
           onClick={prevProduct}
-          className="mr-4 p-2 gray-200 rounded-full"
+          className="mr-4 p-2 text-gray-100 font-bold text-xl rounded-full bg-gray-600"
         >
           &larr;
         </button>
@@ -78,7 +78,7 @@ const ProductCarousel = () => {
         />
         <button
           onClick={nextProduct}
-          className="mr-4 p-2 gray-200 rounded-full"
+          className="mr-4 p-2 text-gray-100 font-bold text-xl rounded-full bg-gray-600"
         >
           &rarr;
         </button>

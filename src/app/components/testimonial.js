@@ -56,34 +56,38 @@ const TestimonialCarousel = () => {
       }, 1000); // Sama dengan durasi animasi
     }, 5000);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   const { name, rating, desc, image } = testi[currentIndex];
 
   return (
-    <div
-      className={`flex gap-8 items-center bg-[#BACBDA] p-5 m-8 rounded-2xl justify-between ${animation}`}
-    >
-      <div className={`flex flex-col flex-1 items-center mb-4 ${animation}`}>
-        <div className="flex items-center mb-2">
-          <h2 className="text-lg font-bold mr-2 text-[#023566]">{name}</h2>
-          <span className="text-yellow-500">{Array(rating).fill("⭐")}</span>
-        </div>
-        <p className="text-center text-[#023566]">{desc}</p>
-      </div>
-      <div className={`flex flex-2 items-center justify-center ${animation}`}>
-        {image ? (
-          <img
-            src={image}
-            alt={name}
-            className="w-[200px] h-[200px] object-cover"
-          />
-        ) : (
-          <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-gray-500">
-            No Image
+    <div className="w-full overflow-hidden">
+      <div
+        className={`flex flex-col gap-8 min-w-[300px] items-center bg-[#BACBDA] p-5 m-8 rounded-2xl justify-between relative ${animation}`}
+      >
+        <div className={`flex flex-col flex-1 items-center mb-4 ${animation}`}>
+          <div className="flex items-center mb-2">
+            <h2 className="text-lg font-bold mr-2 text-[#023566]">{name}</h2>
+            <span className="text-yellow-500">{Array(rating).fill("⭐")}</span>
           </div>
-        )}
+          <p className="text-wrap text-center text-[#023566]">{desc}</p>
+        </div>
+        <div className={`flex flex-2 items-center justify-center ${animation}`}>
+          {image ? (
+            <img
+              src={image}
+              alt={name}
+              className="w-[200px] h-[200px] object-cover"
+            />
+          ) : (
+            <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-gray-500">
+              No Image
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
