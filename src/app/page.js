@@ -19,7 +19,7 @@ const Home = () => {
             id="social-media"
           >
             <div className="flex justify-center">
-              <a href="https://wa.me/085186668382?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Anda.">
+              <a href="https://wa.me/+62085186668382?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Anda.">
                 <button className="flex w-[300px] h-[50px] bg-[#009418] justify-center items-center rounded-full transform transition-transform duration-300 hover:scale-105">
                   <img src="whatsapp.svg" className="w-[30px] mr-3" />
                   <h2 className="text-2xl text-white font-bold">Whatsapp</h2>
@@ -34,7 +34,7 @@ const Home = () => {
             </div>
             <div className="flex justify-center">
               <a href="https://vt.tiktok.com/ZSYv4tUdX/?page=Mall">
-                <button className="flex w-[300px] h-[50px] bg-[#414141] justify-center items-center rounded-full transform transition-transform duration-300 hover:scale-105">
+                <button className="flex w-[300px] h-[50px] bg-[#272727] justify-center items-center rounded-full transform transition-transform duration-300 hover:scale-105">
                   <img src="tiktok.svg" className="w-[25px] mr-3" />
                   <h2 className="text-2xl text-white font-bold">Tiktok</h2>
                 </button>
@@ -101,7 +101,7 @@ const Home = () => {
               Dapatkan Harga Terbaik untuk Pembelian <br /> dalam Jumlah Banyak
             </h3>
             <div className="flex justify-center">
-              <a href="https://wa.me/085186668382?text=Hai%2C%20saya%20mau%20harga%20grosir.">
+              <a href="https://wa.me/+62085186668382?text=Hai%2C%20saya%20mau%20harga%20grosir.">
                 <button className="flex w-[300px] h-[50px] bg-[#009418] justify-center items-center rounded-full transform transition-transform duration-300 hover:scale-105">
                   <img src="whatsapp.svg" className="w-[30px] mr-3" />
                   <h2 className="text-2xl text-white font-bold">Whatsapp</h2>
