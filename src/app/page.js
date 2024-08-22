@@ -60,9 +60,11 @@ const Home = () => {
           </h2>
           <div className="flex justify-center">
             <div className="grid grid-cols-2 grid-rows-2 justify-items-center gap-8 w-fit">
-              <div className="transform transition-transform duration-300 hover:scale-105">
-                <img src="product1.png" />
-              </div>
+              <a href="https://shopee.co.id/super-feeder-lock-besi-tempat-alat-pakan-ternak-ayam-bebek-unggas-Grade-B--i.1268737948.28958431963?sp_atk=4ea29772-60d4-41d0-bea8-80170a9f6bdd&xptdk=4ea29772-60d4-41d0-bea8-80170a9f6bdd">
+                <div className="transform transition-transform duration-300 hover:scale-105">
+                  <img src="product6.png" />
+                </div>
+              </a>
               <a href="https://shopee.co.id/Nipple-Nipel-Niple-drinker-kuning-tempat-minum-ayam-A5-i.1268737948.25132258534?sp_atk=ba0e1127-9b52-4787-a70c-df3f315939a2&xptdk=ba0e1127-9b52-4787-a70c-df3f315939a2">
                 <div className="transform transition-transform duration-300 hover:scale-105">
                   <img src="product2.png" />
@@ -122,9 +124,17 @@ const Home = () => {
             <h3 className="flex justify-center text-center text-l font-bold text-[#023566] mb-6 opacity-0">
               HUBUNGI KAMI
             </h3>
-            <h3 className="flex justify-center text-center text-l font-bold text-[#023566] mb-6 text-wrap ">
+            <div className="flex justify-center">
+              <a href="https://wa.me/+62085186668382?text=Hai%2C%20Saya%20mau%20bergabung%20menjadi%20reseller.">
+                <button className="flex w-[300px] h-[50px] bg-[#009418] justify-center items-center rounded-full transform transition-transform duration-300 hover:scale-105">
+                  <img src="whatsapp.svg" className="w-[30px] mr-3" />
+                  <h2 className="text-2xl text-white font-bold">Whatsapp</h2>
+                </button>
+              </a>
+            </div>
+            {/* <h3 className="flex justify-center text-center text-l font-bold text-[#023566] mb-6 text-wrap ">
               COMING SOON (TUNGGU INFO SELANJUTNYA)
-            </h3>
+            </h3> */}
             {/* <div className="flex justify-center opacity-0">
               <a href="https://wa.me/085186668382?text=Halo%2C%20saya%20mau%20gabung%20jadi%20reseller.">
                 <button className="flex w-[300px] h-[50px] bg-[#009418] justify-center items-center rounded-full transform transition-transform duration-300 hover:scale-105">
